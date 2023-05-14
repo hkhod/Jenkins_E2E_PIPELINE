@@ -1,0 +1,43 @@
+@('myshared_Lib')_
+pipeline{
+    agent any{
+        stages{
+            stage("Git checkout"){
+                steps{
+                    script{
+                        Gitcheckout()
+                    }
+                }
+            }
+            stage("Maven test"){
+                steps{
+                    script{
+
+                    }
+                }
+            }
+            stage("sonarqube Analysis"){
+                steps{
+                    script{
+
+                    }
+                }
+            }
+            stage(Quality Gate){
+                steps{
+                    script{
+
+                    }
+                }
+            }
+            stage(Build code){
+                steps{
+                    script{
+
+                    }
+                }
+            }
+
+        }
+    }
+}
