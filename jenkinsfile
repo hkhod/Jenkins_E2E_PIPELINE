@@ -1,4 +1,3 @@
-@('myshared_Lib')_
 pipeline{
     agent any{
         stages{
