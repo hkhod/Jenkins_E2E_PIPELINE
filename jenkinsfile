@@ -5,7 +5,7 @@ pipeline{
             stage("Git checkout"){
                 steps{
                     script{
-                        Gitcheckout()
+                        git branch: 'main', url: 'https://github.com/hkhod/Jenkins_E2E_PIPELINE.git'
                     }
                 }
             }
