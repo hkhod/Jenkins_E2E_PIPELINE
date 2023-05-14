@@ -22,14 +22,14 @@ pipeline{
                     }
                 }
             }
-            stage(Quality Gate){
+            stage("Quality Gate"){
                 steps{
                     script{
 
                     }
                 }
             }
-            stage(Build code){
+            stage("Build code"){
                 steps{
                     script{
 
