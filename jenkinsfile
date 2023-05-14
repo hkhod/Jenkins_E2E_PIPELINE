@@ -1,41 +1,11 @@
-pipeline{
+pipeline {
     agent any
-        stages{
-            stage("Git checkout"){
-                steps{
-                    script{
-                        git branch: 'main', url: 'https://github.com/hkhod/Jenkins_E2E_PIPELINE.git'
-                    }
-                }
-            }
-            stage("Maven test"){
-                steps{
-                    script{
 
-                    }
-                }
+    stages {
+        stage('Hello') {
+            steps {
+                git branch: 'main', url: 'https://github.com/hkhod/Jenkins_E2E_PIPELINE.git'
             }
-            stage("sonarqube Analysis"){
-                steps{
-                    script{
-
-                    }
-                }
-            }
-            stage("Quality Gate"){
-                steps{
-                    script{
-
-                    }
-                }
-            }
-            stage("Build code"){
-                steps{
-                    script{
-
-                    }
-                }
-            }
-
         }
+    }
 }
