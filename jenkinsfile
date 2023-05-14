@@ -7,5 +7,12 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/hkhod/Jenkins_E2E_PIPELINE.git'
             }
         }
+        stage('MAVEN TEST') {
+            steps {
+                script{
+                    sh 'mvn clean test'
+                     }
+                 }
+             }
     }
 }
